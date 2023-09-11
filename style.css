@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #222; /* Dark gray header background */
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; /* White text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Dark background for the navigation */
+    padding: 15px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.col {
+    flex-basis: 33.33%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green background for sorting buttons */
+    color: #fff; /* White text color */
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+/* The last button should not have a right margin */
+button.sorting-button:last-child {
+    margin-right: 0;
+}
+
+/* Hover effect */
+button.sorting-button:hover {
+    background-color: #45a045; /* Darker green on hover */
+}
+
+/* Range Input Styles */
+input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    border: none;
+    height: 5px;
+}
+
+/* Container for Bars */
+#bars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 200px;
+    margin-top: 20px;
+    background-color: #222; /* Dark gray background for the bars container */
+}
+
+/* Individual Bars Styles (Adjust as needed) */
+.bar {
+    flex-grow: 1;
+    margin: 0 2px;
+    background-color: #4CAF50; /* Green bar color */
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .col {
+        flex-basis: 50%;
+    }
+}
